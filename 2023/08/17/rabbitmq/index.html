@@ -24,12 +24,13 @@
     <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
     <div class="post-title">
         <p>
-            
+            rabbitmq
         </p>
         <hr>
     </div>
     <div class="post-content">
         <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="通过docker下载rabbitmq"><a href="#通过docker下载rabbitmq" class="headerlink" title="通过docker下载rabbitmq"></a>通过docker下载rabbitmq</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 拉取镜像</span></span><br><span class="line">docker pull rabbitmq  </span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行容器</span></span><br><span class="line">docker run \</span><br><span class="line">-e RABBITMQ_DEFAULT_USER=erxat \</span><br><span class="line">-e RABBITMQ_DEFAULT_PASS=123456 \</span><br><span class="line">--name mq \</span><br><span class="line">--hostname mq1 \</span><br><span class="line">-p 15672:15672 \</span><br><span class="line">-p 5672:5672 \</span><br><span class="line">-d \</span><br><span class="line">rabbitmq:latest</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入容器开启 界面工具</span></span><br><span class="line">rabbitmq-plugins <span class="built_in">enable</span> rabbitmq_management</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
